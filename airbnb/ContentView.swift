@@ -8,9 +8,17 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            ExploreView()
+                .tabItem {
+                    Image(systemName: "phone.fill")
+                    Text("First Tab")
+                }
+        }
+//        Text("Hello, World!").font(.title )
     }
 }
 
